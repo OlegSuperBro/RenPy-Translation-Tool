@@ -1,23 +1,12 @@
-﻿using System;
+﻿using Core.Models;
+using Core.Parsing.Serialization;
+using RenPy_Translation_Tool.ViewModels;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Forms;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using Core.Models;
-using Core.Parsing.Serialization;
-using RenPy_Translation_Tool.ViewModels;
 
 namespace RenPy_Translation_Tool.Views
 {
@@ -58,7 +47,7 @@ namespace RenPy_Translation_Tool.Views
         {
             ObservableCollection<ParsedLineViewModel> lines = new ObservableCollection<ParsedLineViewModel>();
 
-            foreach(ParsedLineViewModel line in currentFile.Lines)
+            foreach (ParsedLineViewModel line in currentFile.Lines)
             {
                 lines.Add(line);
             }
@@ -77,7 +66,7 @@ namespace RenPy_Translation_Tool.Views
         {
             NewProjectWindow newProjectWindow = new NewProjectWindow();
             newProjectWindow.Owner = this;
-            bool? result =  newProjectWindow.ShowDialog();
+            bool? result = newProjectWindow.ShowDialog();
             if (result == false)
             {
                 return;

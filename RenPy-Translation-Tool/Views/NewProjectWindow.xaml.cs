@@ -1,22 +1,13 @@
 ﻿using Core.Models;
 using Core.Parsing.Parsers;
+using RenPy_Translation_Tool.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Diagnostics;
-using System.Text;
-using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
-using System.Text.RegularExpressions;
 using System.Windows.Forms; // just for open folder dialog
-using RenPy_Translation_Tool.ViewModels;
 
 namespace RenPy_Translation_Tool.Views
 {

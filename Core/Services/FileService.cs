@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Core.Models;
+﻿using Core.Models;
 
 namespace Core.Services
 {
@@ -11,7 +6,7 @@ namespace Core.Services
     {
         public static void ExportWorkspace(Workspace workspace, string dirPath)
         {
-            foreach(ParsedFile file in workspace.Files)
+            foreach (ParsedFile file in workspace.Files)
             {
                 ExportFile(file, dirPath, file.OriginalPath);
             }

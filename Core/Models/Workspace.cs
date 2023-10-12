@@ -1,10 +1,5 @@
-﻿using System.Net;
-using System.Runtime.Serialization;
-using System.Security.Cryptography.X509Certificates;
-using System.Xml;
-using System.Xml.Schema;
+﻿using System.Xml;
 using System.Xml.Serialization;
-using Core.Parsing.Serialization;
 
 namespace Core.Models
 {

@@ -1,11 +1,5 @@
 ﻿using Core.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 namespace Core.Parsing.Parsers
 {
@@ -29,7 +23,7 @@ namespace Core.Parsing.Parsers
                 {
                     while ((line = reader.ReadLine()) != null)
                     {
-                       lines.Add(new ParsedLine(index, line.TrimStart()));
+                        lines.Add(new ParsedLine(index, line.TrimStart()));
                     }
                 }
                 else

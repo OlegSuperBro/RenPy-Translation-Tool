@@ -36,7 +36,7 @@ namespace Core.Parsing.Parsers.Tests
                 }
                 index++;
             }
-            string testDirectory = Path.Combine(workingDir, "TestStrings");            
+            string testDirectory = Path.Combine(workingDir, "TestStrings");
 
             ParsedFile[] parsedFiles = AllFilesParser.ParseAllFiles(testDirectory, regexes);
 
