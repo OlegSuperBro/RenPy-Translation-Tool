@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RegularExpressions>
+	<Expression>
+		<Pattern>^\d{3}$</Pattern>
+		<ExpectedOutputs>
+			<Output>123</Output>
+			<Output>456</Output>
+			<Output>789</Output>
+		</ExpectedOutputs>
+	</Expression>
+	<Expression>
+		<Pattern>^[A-Za-z]{4}$</Pattern>
+		<ExpectedOutputs>
+			<Output>abcd</Output>
+			<Output>ABCD</Output>
+		</ExpectedOutputs>
+	</Expression>
+	<Expression>
+		<Pattern>^\d{2}[a-zA-Z]{2}$</Pattern>
+		<ExpectedOutputs>
+			<Output>12ab</Output>
+			<Output>34CD</Output>
+		</ExpectedOutputs>
+	</Expression>
+</RegularExpressions>
